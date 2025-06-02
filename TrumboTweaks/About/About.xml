@@ -1,0 +1,9 @@
+<ModMetaData>
+  <name>Trumbo Tweaks</name>
+  <author>koshakov</author>
+  <description>Уменьшает дикость трумбо и позволяет стричь с них мех трумбо как с овец.</description>
+  <packageId>koshakov.trumbotweaks</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+</ModMetaData>

@@ -1,0 +1,28 @@
+<Patch>
+  <!-- Добавляем наш компонент в comps -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Thrumbo"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Thrumbo"]</xpath>
+      <value>
+        <comps />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Thrumbo"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Shearable">
+        <shearIntervalDays>10</shearIntervalDays>
+        <woolAmount>300</woolAmount>
+        <woolDef>Leather_Thrumbo</woolDef>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/race/wildness</xpath>
+		<value>
+			<wildness>0.4</wildness>
+		</value>
+	</Operation>
+</Patch>
